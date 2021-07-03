@@ -15,6 +15,9 @@
     background-color: rgb(187, 187, 187);
     border-radius: 20px;
 }
+.mt{
+    margin-top: 10px!important;
+}
 nav{
     width: 100%;
     display: flex;
@@ -136,7 +139,7 @@ nav .search button{
 /* ************** About ************** */
 .row{
     display: flex;
-    margin-top: 40px;
+    padding: 40px 0;
 }
 .column{
     width: 50%;
@@ -163,6 +166,7 @@ nav .search button{
     font-weight: bold;
     color: var(--main);
     font-size: 40px;
+    padding: 0 20px;
 }
 .inner_text{
     font-size: 18px;
@@ -179,6 +183,7 @@ nav .search button{
     flex-direction: column;
     text-align: center;
     padding: 0 10px;
+    margin-top: 30px!important;
 }
 .gallery__image{
     width: 100%;
@@ -244,5 +249,24 @@ footer{
     }
     nav .search::before{
         right: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .row{
+        flex-direction: column;
+        margin-top: 0px;
+        padding: 20px 0;
+    }
+    .column, .col-4{
+        width: 100%;
+        padding: 20px;
+    }
+    .inner_text{
+        padding: 20px;
+        margin-top: 0;
+    }
+    .gallery{
+        margin-top: 10px!important;
     }
 }
